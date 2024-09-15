@@ -12,7 +12,7 @@ function Navbar() {
 									<path d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z" fill="currentColor"></path>
 								</svg>
         </div>
-        <div className='links flex gap-10 max-sm:bg-red-500 width-auto'>
+        <div className='links flex gap-10 max-sm:width-auto'>
             {["Services","Our work","About us","Insights","Contact us"].map((item,index)=>
             <a key={index} className={`text-lg font-light  transition-all duration-300 ease-in-out 
             hover:text-gray-500 hover:scale-105 hover:tracking-wide 

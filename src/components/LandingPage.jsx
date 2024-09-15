@@ -9,13 +9,13 @@ function LandingPage() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.3" className="w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-52 px-20 max-sm:leading-loose">
-      {["We Create", "EYE-OPEN", "PPT"].map((item, index) => {
+      {["We Create", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => {
   return (
     <div className="masker" key={index}>
         <div className="w-fit flex items-center">
         {index === 1 && (<motion.div  initial={{width:"0"}} animate={{width:"9vw"}} transition={{ease:[0.76, 0, 0.24, 1],duration:1}}  className=" flex justify-center items-center mt-2 mr-3 rounded-md overflow-hidden realtive -top-[1.2vw] w-[9vw] h-[5.7vw] mt-4 rounded-2xl"><img src="https://ugc.production.linktr.ee/1298a9cc-ac4f-48d4-a064-a2eb3154a237_Group-4780.png?io=true&size=avatar-v3_0"/></motion.div>)}
       <h1
-        className="uppercase leading-none text-9xl font-semibold leading-[7.5vw]"
+        className="uppercase text-9xl font-semibold leading-[7.5vw] max-sm:text-5xl"
         style={{ fontFamily: "'Test Founders Grotesk X-Condensed'" }}
       >
         {item}
@@ -25,7 +25,7 @@ function LandingPage() {
   );
 })}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20">
+      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 max-sm:mt-5 max-sm:flex-col max-sm:gap-3 max-sm:pl-0">
   {["For public and private companies", "From the first pitch to IPO"].map((item, index) => {
     return (
       <p key={index} className="text-md font-light leading-none tracking-tighter">

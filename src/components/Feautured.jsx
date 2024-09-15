@@ -1,23 +1,24 @@
 import { delay, motion } from "framer-motion";
 import React, { useState } from "react";
 
+
 function Featured() {
   const [isHoveringCard1, setHoveringCard1] = useState(false);
   const [isHoveringCard2, setHoveringCard2] = useState(false);
 
   return (
-    <div className="w-full py-20">
-      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
+    <div className="w-full py-20 max-sm:py-0">
+      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20 max-sm:mr-6">
         <h1 className='text-7xl font-["Neue_Montreal"] tracking-tight'>
           Featured projects
         </h1>
       </div>
       <div className="px-20">
-        <div className="cards w-full flex gap-10 mt-10">
+        <div className="cards w-full flex gap-10 mt-10 max-sm:flex-col max-sm:h-fit max-sm:w-fit">
           <div
             onMouseEnter={() => setHoveringCard1(true)}
             onMouseLeave={() => setHoveringCard1(false)}
-            className="cardcontainer relative w-1/2 h-[75vh] overflow-hidden transform transition-transform duration-500 ease-in-out"
+            className="cardcontainer relative w-1/2 h-[75vh] overflow-hidden transform transition-transform duration-500 ease-in-out max-sm:h-1/2"
             style={{
               transform: isHoveringCard1 ? "scale(1.1)" : "scale(1.05)",
             }}
@@ -44,9 +45,9 @@ function Featured() {
                 </motion.span>
               ))}
             </motion.h1>
-            <div className="card w-full h-full rounded-xl overflow-hidden bg-zinc-100">
+            <div className="card w-full h-full rounded-xl overflow-hidden bg-zinc-100 max-sm:w-full max-sm:h-1/3">
               <img
-                className="w-full h-full object-fit: cover"
+                className="w-full h-full object-fit: cover max-sm:w-full max-sm:h-full max-sm:img1"
                 src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-1326x1101.png"
                 alt="Featured project 1"
               />
@@ -56,7 +57,7 @@ function Featured() {
           <div
             onMouseEnter={() => setHoveringCard2(true)}
             onMouseLeave={() => setHoveringCard2(false)}
-            className="cardcontainer relative w-1/2 h-[75vh] overflow-hidden transform transition-transform duration-500 ease-in-out"
+            className="cardcontainer relative w-1/2 h-[75vh] overflow-hidden transform transition-transform duration-500 ease-in-out max-sm:h-fit"
             style={{
               transform: isHoveringCard2 ? "scale(1.1)" : "scale(1)",
             }}
@@ -83,9 +84,9 @@ function Featured() {
                 </motion.span>
               ))}
             </motion.h1>
-            <div className="card w-full h-full rounded-xl overflow-hidden">
+            <div className="card w-full h-full rounded-xl overflow-hidden max-sm:w-full max-sm:h-fit">
               <img
-                className="w-full h-full object-fit: cover"
+                className="w-full h-full object-fit: cover max-sm:w-200p max-sm:h-1/2 img2"
                 src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-1326x1101.png"
                 alt="Featured project 2"
               />

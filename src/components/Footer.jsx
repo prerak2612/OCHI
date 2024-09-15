@@ -2,11 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" flex gap-5 w-full h-screen bg-zinc-900">
-      <div className="w-1/2 h-full flex flex-col justify-between font-['Test_Founders_Grotesk_X-Condensed'] p-20">
+    <div className="flex flex-col md:flex-row gap-5 w-full h-screen bg-zinc-900">
+      <div className="w-full md:w-1/2 h-full flex flex-col justify-between font-['Test_Founders_Grotesk_X-Condensed'] p-10 md:p-20">
         <div className="heading">
-          <h1 className="text-9xl -mb-10">EYE-</h1>
-          <h1 className="text-9xl -mb-10">OPENING</h1>
+          <h1 className="text-6xl md:text-9xl -mb-5 md:-mb-10">EYE-</h1>
+          <h1 className="text-6xl md:text-9xl -mb-5 md:-mb-10">OPENING</h1>
         </div>
         <svg
           width="72"
@@ -37,14 +37,23 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div className="w-1/2">
-      <div className="heading">
-        <h1 className="text-8xl font-['Test_Founders_Grotesk_X-Condensed'] p-20">PRESENTATIONS</h1>
-        <div className="dets font-['Neue_Montreal'] mt-8 ml-20">
-            <a className="block text-l font-light underline" href="#">Instagram</a>
-            <a  className="block text-l font-light underline" href="#">Facebook</a>
-            <a className="block text-l font-light underline" href="#">Twitter</a>
-        </div>
+
+      <div className="w-full md:w-1/2 flex flex-col justify-center md:justify-start">
+        <div className="heading">
+          <h1 className="text-5xl md:text-8xl font-['Test_Founders_Grotesk_X-Condensed'] p-10 md:p-20">
+            PRESENTATIONS
+          </h1>
+          <div className="dets font-['Neue_Montreal'] mt-6 md:mt-8 ml-10 md:ml-20">
+            <a className="block text-base md:text-lg font-light underline" href="#">
+              Instagram
+            </a>
+            <a className="block text-base md:text-lg font-light underline" href="#">
+              Facebook
+            </a>
+            <a className="block text-base md:text-lg font-light underline" href="#">
+              Twitter
+            </a>
+          </div>
         </div>
       </div>
     </div>

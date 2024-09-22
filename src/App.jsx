@@ -8,6 +8,13 @@ import Feautured from './components/Feautured'
 import Cards from './components/Cards'
 import Footer from './components/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
+import ReadyToStart from './components/ReadyToStart'
+import Services from './components/Services'
+import Ourwork from './components/Ourwork'
+import Info from './components/Info'
+import Insights from './components/Insights'
+import Contactus from './components/Contactus'
+
 
 
 function App() {
@@ -23,6 +30,12 @@ function App() {
       <Eyes/>
       <Feautured/>
       <Cards/>
+      <ReadyToStart/>
+      <Services/>
+      <Ourwork/>
+      <Info/>
+      <Insights/>
+      <Contactus/>
       <Footer/>
     </div>
   )

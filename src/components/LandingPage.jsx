@@ -2,6 +2,8 @@ import React from "react";
 import { FaLongArrowAltUp } from "react-icons/fa";
 import image2 from "../assets/ochi.png"
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
+
 
 
 
@@ -34,8 +36,15 @@ function LandingPage() {
     );
   })}
   <div className="start flex items-center gap-1">
-    <div className="px-5 py-2 border-[2px] border-zinc-500 font-light text-sm rounded-full">START THE PROJECT
-    </div>
+  <Link
+  to="contactUs"
+  smooth={true}
+  duration={1000}
+  offset={-80} 
+>
+    <button className="px-5 py-2 border-[2px] border-zinc-500 font-light text-sm rounded-full">START THE PROJECT
+    </button>
+    </Link>
     <div className="w-10 h-10 flex items-center justify-center rounded-full border-[2px] border-zinc-500 ">
         <span className="rotate-[45deg]">
         <FaLongArrowAltUp/>

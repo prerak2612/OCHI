@@ -6,17 +6,31 @@ export default {
   ],
   theme: {
     extend: {
-      spacing: {
-        '200p': '200%',
+      keyframes: {
+        lineGrow: {
+          '0%': { width: '0%' },  // Start at 0% width
+          '100%': { width: '100%' }  // End at 100% width
+        },
+        blast: {  
+          '0%': {
+            opacity: 0,
+            transform: 'scale(0.5)'
+          },
+          '50%': {
+            opacity: 1,
+            transform: 'scale(1.2)'
+          },
+          '100%': {
+            opacity: 1,  
+            transform: 'scale(1)'  
+          }
+        }
       },
-      width: {
-        '200p': '200%', 
+      animation: {
+        lineGrow: 'lineGrow 2s ease-in-out forwards',
+        blast: 'blast 1.5s ease-out forwards',  
       },
-      height: {
-        '200p': '200%', 
-      }
     },
   },
   plugins: [],
 }
-

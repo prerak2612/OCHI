@@ -1,6 +1,4 @@
 import React from 'react'
-import image1 from "../assets/Homepage-Photo-1326x939.jpg"
-
 function About() {
   return (
 
@@ -18,7 +16,7 @@ function About() {
 
 
             </div>
-            <img src={image1} className='w-1/2 rounded-2xl max-sm:mt-12'></img>
+            <img src='https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg' className='w-1/2 rounded-2xl max-sm:mt-12'></img>
         </div>
 
     </div>

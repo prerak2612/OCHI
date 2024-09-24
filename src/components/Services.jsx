@@ -20,7 +20,7 @@ function Services() {
 <div className="w-screen min-h-screen bg-[#CDEA67]">
   <div>
     <h1 className='font-["Test_Founders_Grotesk_X-Condensed"] text-5xl md:text-9xl text-center text-[#212121] mt-10'>
-      Client’s reviews
+      CLIENT'S REVIEWS
     </h1>
   </div>
 

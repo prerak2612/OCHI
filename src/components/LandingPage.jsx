@@ -1,6 +1,5 @@
 import React from "react";
 import { FaLongArrowAltUp } from "react-icons/fa";
-import image2 from "../assets/ochi.png"
 import { motion } from "framer-motion";
 import { Link } from 'react-scroll';
 

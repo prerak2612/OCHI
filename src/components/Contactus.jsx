@@ -80,18 +80,6 @@ function Contactus() {
   if (submitted) {
     return (
       <div className="w-screen h-screen flex items-center justify-center bg-[#18181B] p-4 text-white">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        >
-          <source
-            src="https://web-images.credcdn.in/v2/_next/assets/videos/landing/desktop/hero-desktop.mp4?tr=q-95"
-            type="video/mp4"
-          />
-        </video>
-
         <div className="animate-blast text-4xl md:text-5xl lg:text-6xl font-bold">
           Thank you for your inquiry!
         </div>
@@ -104,7 +92,7 @@ function Contactus() {
       <ToastContainer />
       <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-[#28313b] via-[#485461] to-[#0b8793] p-6 text-white">
         <div
-          className="w-full border-dotted border-b-2 border-gray-500 animate-lineGrow"
+          className="w-full border-dotted border-b-2 border-white animate-lineGrow"
           ref={lineRefTop}
         ></div>
         <div className="text-center text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wide mb-8 font-['Test_Founders_Grotesk_X-Condensed']">
@@ -168,7 +156,7 @@ function Contactus() {
               <input
                 className="bg-gray-50 border-2 border-gray-200 text-black placeholder-gray-400 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 transition-all duration-300 w-full"
                 placeholder="Date*"
-                type="text"
+                type="date"
                 name="date"
                 value={formData.date}
                 onChange={handleInputChange}

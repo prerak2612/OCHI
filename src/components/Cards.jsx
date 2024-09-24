@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Cards() {
     return (
@@ -18,7 +18,7 @@ function Cards() {
         </div>
   
         {/* Second and Third Cards */}
-        <div className="cardcontainer2 flex flex-col md:flex-row gap-5 w-full md:w-1/2 h-[50vh]">
+        <div className="cardcontainer2 flex flex-col md:flex-row gap-5 w-full md:w-1/2 h-[50vh] space-y-2 md:space-y-0">
           {/* Second Card */}
           <div className="card relative rounded-xl w-full md:w-1/2 h-full bg-[#212121] flex items-center justify-center">
             <img
@@ -26,7 +26,7 @@ function Cards() {
               src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
               alt="Logo 2"
             />
-            <button className="absolute px-2 py-1 md:px-4 border-2 rounded-full left-4 md:left-10 bottom-6 md:bottom-10 text-xs hover:bg-white hover:text-black transition duration-300 ease-in-out">
+            <button className="absolute mt-2 px-2 py-1 md:px-4 border-2 rounded-full left-4 md:left-10 bottom-6 md:bottom-10 md:-mt-32 text-xs hover:bg-white hover:text-black transition duration-300 ease-in-out">
               RATING 5.0 ON CLUTCH
             </button>
           </div>
@@ -38,7 +38,7 @@ function Cards() {
               src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
               alt="Logo 3"
             />
-            <button className="absolute px-2 py-1 md:px-4 border-2 rounded-full left-4 md:left-6 bottom-6 md:bottom-10 text-xs hover:bg-white hover:text-black transition duration-300 ease-in-out">
+            <button className="absolute px-2 py-1 md:px-4 border-2 rounded-full left-4 md:left-6 bottom-6 md:bottom-10 text-xs hover:bg-white md:mt-20 hover:text-black transition duration-300 ease-in-out">
               BUSINESS BOOTCAMP ALUMNI
             </button>
           </div>
@@ -47,4 +47,4 @@ function Cards() {
     );
   }
   
-  export default Cards;
+export default Cards;
